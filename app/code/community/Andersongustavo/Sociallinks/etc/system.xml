@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <andersongustavo translate="label" module="sociallinks">
+            <label>Social Links</label>
+            <sort_order>100</sort_order>
+        </andersongustavo>
+    </tabs>
+
+    <sections>
+        <andersongustavo_options translate="label" module="sociallinks">
+            <label>Sharing Options</label>
+            <tab>andersongustavo</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <andersongustavo_facebook translate="label" module="sociallinks">
+                    <label>Facebook</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <andersongustavo_select translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </andersongustavo_select>
+                    </fields>
+                </andersongustavo_facebook>
+            </groups>
+            <groups>
+                <andersongustavo_twitter translate="label" module="sociallinks">
+                    <label>Twitter</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <andersongustavo_select translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </andersongustavo_select>
+                    </fields>
+                </andersongustavo_twitter>
+            </groups>
+            <groups>
+                <andersongustavo_google translate="label" module="sociallinks">
+                    <label>Google+</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <andersongustavo_select translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </andersongustavo_select>
+                    </fields>
+                </andersongustavo_google>
+            </groups>
+            <groups>
+                <andersongustavo_instagram translate="label" module="sociallinks">
+                    <label>Instagram</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <andersongustavo_select translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </andersongustavo_select>
+                    </fields>
+                </andersongustavo_instagram>
+            </groups>
+        </andersongustavo_options>
+    </sections>
+</config>

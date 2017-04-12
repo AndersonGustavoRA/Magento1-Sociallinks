@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Andersongustavo_Sociallinks>
+            <version>1.0</version>
+        </Andersongustavo_Sociallinks>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <Andersongustavo_Sociallinks>
+                    <file>sociallinks.xml</file>
+                </Andersongustavo_Sociallinks>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <helpers>
+            <sociallinks>
+                <class>Andersongustavo_Sociallinks_Helper</class>
+            </sociallinks>
+        </helpers>
+        <blocks>
+            <sociallinks>
+                <class>Andersongustavo_Sociallinks_Block</class>
+            </sociallinks>
+        </blocks>
+    </global>
+</config>

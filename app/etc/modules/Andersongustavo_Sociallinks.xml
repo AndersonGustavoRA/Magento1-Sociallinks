@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Andersongustavo_Sociallinks>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Andersongustavo_Sociallinks>
+    </modules>
+</config>
