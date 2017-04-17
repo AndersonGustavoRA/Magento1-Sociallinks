@@ -1,29 +1,11 @@
 <?php
+
 /**
- * Created by PhpStorm.
- * User: Anderson
- * Date: 12/04/2017
- * Time: 02:52
+ * @package     Andersongustavo_Sociallinks
+ * @author      Anderson Gustavo Rodrigues Alves - anderson.quata@hotmail.com
+ * @copyright   Anderson Gustavo Rodrigues Alves - anderson.quata@hotmail.com
+ * @license     https://opensource.org/licenses/AFL-3.0  Academic Free License 3.0 | Open Source Initiative
  */
-
 class Andersongustavo_Sociallinks_Helper_Data extends Mage_Core_Helper_Abstract{
-    private function getConfig($path){
-        return Mage::getStoreConfig('andersongustavo_options/'.$path.'/andersongustavo_select', Mage::app()->getStore());
-    }
 
-    public function isFacebookEnabled(){
-        return $this->getConfig("andersongustavo_facebook");
-    }
-
-    public function isTwitterEnabled(){
-        return $this->getConfig("andersongustavo_twitter");
-    }
-
-    public function isGoogleEnabled(){
-        return $this->getConfig("andersongustavo_google");
-    }
-
-    public function isInstagramEnabled(){
-        return $this->getConfig("andersongustavo_instagram");
-    }
 }

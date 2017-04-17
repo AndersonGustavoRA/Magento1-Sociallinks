@@ -1,4 +1,12 @@
 <?xml version="1.0"?>
+<!--
+	**
+	*@package     Andersongustavo_Sociallinks
+	*@author      Anderson Gustavo Rodrigues Alves - anderson.quata@hotmail.com
+	*@copyright   Anderson Gustavo Rodrigues Alves - anderson.quata@hotmail.com
+	*@license     https://opensource.org/licenses/AFL-3.0  Academic Free License 3.0 | Open Source Initiative
+	**
+-->
 <config>
     <tabs>
         <andersongustavo translate="label" module="sociallinks">
@@ -17,7 +25,29 @@
             <show_in_store>1</show_in_store>
 
             <groups>
-                <andersongustavo_facebook translate="label" module="sociallinks">
+                <head translate="label" module="sociallinks">
+                    <label>Head text</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <andersongustavo_text translate="label">
+                            <label>Text</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>Insert a label text. Ex: Share with your friends!</comment>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </andersongustavo_text>
+                    </fields>
+                </head>
+            </groups>
+            <groups>
+                <facebook translate="label" module="sociallinks">
                     <label>Facebook</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>1</sort_order>
@@ -36,10 +66,21 @@
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                         </andersongustavo_select>
                     </fields>
-                </andersongustavo_facebook>
+                    <fields>
+                        <andersongustavo_text translate="label">
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>Insert the order that, the social network buttons should be displayed</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </andersongustavo_text>
+                    </fields>
+                </facebook>
             </groups>
             <groups>
-                <andersongustavo_twitter translate="label" module="sociallinks">
+                <twitter translate="label" module="sociallinks">
                     <label>Twitter</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>2</sort_order>
@@ -58,10 +99,21 @@
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                         </andersongustavo_select>
                     </fields>
-                </andersongustavo_twitter>
+                    <fields>
+                        <andersongustavo_text translate="label">
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>Insert the order that, the social network buttons should be displayed</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </andersongustavo_text>
+                    </fields>
+                </twitter>
             </groups>
             <groups>
-                <andersongustavo_google translate="label" module="sociallinks">
+                <google translate="label" module="sociallinks">
                     <label>Google+</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
@@ -80,11 +132,55 @@
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                         </andersongustavo_select>
                     </fields>
-                </andersongustavo_google>
+                    <fields>
+                        <andersongustavo_text translate="label">
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>Insert the order that, the social network buttons should be displayed</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </andersongustavo_text>
+                    </fields>
+                </google>
             </groups>
+            <!--<groups>-->
+                <!--<instagram translate="label" module="sociallinks">-->
+                    <!--<label>Instagram</label>-->
+                    <!--<frontend_type>text</frontend_type>-->
+                    <!--<sort_order>4</sort_order>-->
+                    <!--<show_in_default>1</show_in_default>-->
+                    <!--<show_in_website>1</show_in_website>-->
+                    <!--<show_in_store>1</show_in_store>-->
+
+                    <!--<fields>-->
+                        <!--<andersongustavo_select translate="label">-->
+                            <!--<label>Enabled</label>-->
+                            <!--<frontend_type>select</frontend_type>-->
+                            <!--<sort_order>1</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>1</show_in_store>-->
+                            <!--<source_model>adminhtml/system_config_source_yesno</source_model>-->
+                        <!--</andersongustavo_select>-->
+                    <!--</fields>-->
+                    <!--<fields>-->
+                        <!--<andersongustavo_text translate="label">-->
+                            <!--<label>Sort order</label>-->
+                            <!--<frontend_type>text</frontend_type>-->
+                            <!--<comment>Insert the order that, the social network buttons should be displayed</comment>-->
+                            <!--<sort_order>2</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>1</show_in_store>-->
+                        <!--</andersongustavo_text>-->
+                    <!--</fields>-->
+                <!--</instagram>-->
+            <!--</groups>-->
             <groups>
-                <andersongustavo_instagram translate="label" module="sociallinks">
-                    <label>Instagram</label>
+                <linkedin translate="label" module="sociallinks">
+                    <label>Linkedin</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>4</sort_order>
                     <show_in_default>1</show_in_default>
@@ -102,7 +198,183 @@
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                         </andersongustavo_select>
                     </fields>
-                </andersongustavo_instagram>
+                    <fields>
+                        <andersongustavo_text translate="label">
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>Insert the order that, the social network buttons should be displayed</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </andersongustavo_text>
+                    </fields>
+                </linkedin>
+            </groups>
+            <groups>
+                <pinterest translate="label" module="sociallinks">
+                    <label>Pinterest</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <andersongustavo_select translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </andersongustavo_select>
+                    </fields>
+                    <fields>
+                        <andersongustavo_text translate="label">
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>Insert the order that, the social network buttons should be displayed</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </andersongustavo_text>
+                    </fields>
+                </pinterest>
+            </groups>
+            <!--<groups>-->
+                <!--<github translate="label" module="sociallinks">-->
+                    <!--<label>GitHub</label>-->
+                    <!--<frontend_type>text</frontend_type>-->
+                    <!--<sort_order>6</sort_order>-->
+                    <!--<show_in_default>1</show_in_default>-->
+                    <!--<show_in_website>1</show_in_website>-->
+                    <!--<show_in_store>1</show_in_store>-->
+
+                    <!--<fields>-->
+                        <!--<andersongustavo_select translate="label">-->
+                            <!--<label>Enabled</label>-->
+                            <!--<frontend_type>select</frontend_type>-->
+                            <!--<sort_order>1</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>1</show_in_store>-->
+                            <!--<source_model>adminhtml/system_config_source_yesno</source_model>-->
+                        <!--</andersongustavo_select>-->
+                    <!--</fields>-->
+                    <!--<fields>-->
+                        <!--<andersongustavo_text translate="label">-->
+                            <!--<label>Sort order</label>-->
+                            <!--<frontend_type>text</frontend_type>-->
+                            <!--<comment>Insert the order that, the social network buttons should be displayed</comment>-->
+                            <!--<sort_order>2</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>1</show_in_store>-->
+                        <!--</andersongustavo_text>-->
+                    <!--</fields>-->
+                <!--</github>-->
+            <!--</groups>-->
+            <groups>
+                <reddit translate="label" module="sociallinks">
+                    <label>Reddit</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>6</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <andersongustavo_select translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </andersongustavo_select>
+                    </fields>
+                    <fields>
+                        <andersongustavo_text translate="label">
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>Insert the order that, the social network buttons should be displayed</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </andersongustavo_text>
+                    </fields>
+                </reddit>
+            </groups>
+            <groups>
+                <tumblr translate="label" module="sociallinks">
+                    <label>Tumblr</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>7</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <andersongustavo_select translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </andersongustavo_select>
+                    </fields>
+                    <fields>
+                        <andersongustavo_text translate="label">
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>Insert the order that, the social network buttons should be displayed</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </andersongustavo_text>
+                    </fields>
+                </tumblr>
+            </groups>
+            <groups>
+                <whatsapp translate="label" module="sociallinks">
+                    <label>Whatsapp</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>8</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <andersongustavo_select translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </andersongustavo_select>
+                    </fields>
+                    <fields>
+                        <andersongustavo_text translate="label">
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>Insert the order that, the social network buttons should be displayed</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </andersongustavo_text>
+                    </fields>
+                </whatsapp>
             </groups>
         </andersongustavo_options>
     </sections>

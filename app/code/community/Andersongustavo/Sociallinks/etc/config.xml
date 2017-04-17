@@ -1,4 +1,12 @@
 <?xml version="1.0"?>
+<!--
+	**
+	*@package     Andersongustavo_Sociallinks
+	*@author      Anderson Gustavo Rodrigues Alves - anderson.quata@hotmail.com
+	*@copyright   Anderson Gustavo Rodrigues Alves - anderson.quata@hotmail.com
+	*@license     https://opensource.org/licenses/AFL-3.0  Academic Free License 3.0 | Open Source Initiative
+	**
+-->
 <config>
     <modules>
         <Andersongustavo_Sociallinks>

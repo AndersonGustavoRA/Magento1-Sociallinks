@@ -1,36 +1,39 @@
 <?php
+
 /**
- * Created by PhpStorm.
- * User: Anderson
- * Date: 12/04/2017
- * Time: 02:56
+ * @package     Andersongustavo_Sociallinks
+ * @author      Anderson Gustavo Rodrigues Alves - anderson.quata@hotmail.com
+ * @copyright   Anderson Gustavo Rodrigues Alves - anderson.quata@hotmail.com
+ * @license     https://opensource.org/licenses/AFL-3.0  Academic Free License 3.0 | Open Source Initiative
  */
+
 class Andersongustavo_Sociallinks_Block_SocialLinks extends Mage_Core_Block_Template{
 
-    protected $_helper;
-
-    public function __construct(array $args)
-    {
-        $this->_helper = Mage::helper('sociallinks');
+    public function isEnabled($social){
+        return Mage::getStoreConfig('andersongustavo_options/'.$social.'/andersongustavo_select');
     }
 
-    public function getSocialLinks(){
+    public function getOrder($social){
+        return Mage::getStoreConfig('andersongustavo_options/'.$social.'/andersongustavo_text');
+    }
 
-        $enabledLinks = array();
+    public function getHeadText(){
+        return Mage::getStoreConfig('andersongustavo_options/head/andersongustavo_text');
+    }
 
-        if($this->_helper->isFacebookEnabled()){
-            $enabledLinks['facebook'] = true;
-        }
-        if($this->_helper->isTwitterEnabled()){
-            $enabledLinks['twitter'] = true;
-        }
-        if($this->_helper->isGoogleEnabled()){
-            $enabledLinks['google'] = true;
-        }
-        if($this->_helper->isInstagramEnabled()){
-            $enabledLinks['instagram'] = true;
-        }
+    public function getProductName(){
+        return urlencode(Mage::registry('current_product')->getName());
+    }
 
-        return $enabledLinks;
+    public function getProductUrl(){
+        return urlencode(Mage::registry('current_product')->getProductUrl());
+    }
+
+    public function getProductDescription(){
+        return urlencode(Mage::registry('current_product')->getShortDescription());
+    }
+
+    public function getProductImage(){
+        return urlencode(Mage::registry('current_product')->getProductImage());
     }
 }
